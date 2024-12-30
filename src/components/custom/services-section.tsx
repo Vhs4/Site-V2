@@ -125,12 +125,12 @@ function ServicesSection() {
                             </div>
                             <div className="flex flex-col ml-5 w-[76%] max-md:ml-0 max-md:w-full">
                                 <div className="flex grow gap-5 font-medium max-md:mt-10">
-                                    <div className="text-5xl text-amber-400 max-md:text-4xl">
+                                    <h3 className="text-5xl text-amber-400 max-md:text-4xl">
                                         150<span className="text-white">+</span>
-                                    </div>
-                                    <div className="self-start mt-5 text-xs text-white">
+                                    </h3>
+                                    <p className="self-start mt-5 text-xs text-white">
                                         Conteúdos planejados.
-                                    </div>
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -146,9 +146,9 @@ function ServicesSection() {
                                 <Circle key={index} className={index >= 8 ? "bg-zinc-100" : ""} />
                             ))}
                         </div>
-                        <div className="mt-12 text-4xl font-medium text-neutral-900 w-[259px] max-md:mt-10">
+                        <h5 className="mt-12 text-4xl font-medium text-neutral-900 w-[259px] max-md:mt-10">
                             Marketing de conteúdo
-                        </div>
+                        </h5>
                     </div>
                 </div>
                 <div className="flex flex-col self-stretch  min-w-[240px] w-[420px]">
@@ -171,14 +171,14 @@ function ServicesSection() {
                         </div>
                         <div className="flex flex-col justify-center items-start mt-20 text-sm text-neutral-900 max-md:mt-10">
                             {["PLM Inteligente", "Estratégia de Conversões", "Análise Avançada"].map((text) => (
-                                <div key={text} className="gap-2.5 self-stretch px-4 py-1.5 mt-2 first:mt-0 rounded-3xl border border-solid border-neutral-900">
+                                <p key={text} className="gap-2.5 self-stretch px-4 py-1.5 mt-2 first:mt-0 rounded-3xl border border-solid border-neutral-900">
                                     {text}
-                                </div>
+                                </p>
                             ))}
                         </div>
-                        <div className="self-stretch mt-8 text-4xl font-medium text-neutral-900">
+                        <h4 className="self-stretch mt-8 text-4xl font-medium text-neutral-900">
                             Sistema Gerenciador com Análises Avançadas
-                        </div>
+                        </h4>
                         <ButtonWithIcon
                             text="Falar com Especialista"
                             className="mt-8 bg-amber-400 text-neutral-900"
