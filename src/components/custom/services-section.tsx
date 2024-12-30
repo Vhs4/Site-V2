@@ -153,7 +153,7 @@ function ServicesSection() {
                 </div>
                 <div className="flex flex-col self-stretch  min-w-[240px] w-[420px]">
                     <div className="flex flex-col items-start pl-11 pt-9 pb-14 w-full bg-white max-md:px-5">
-                        <div className="flex justify-between items-start max-w-full w-full pr-[55px]">
+                        <div className="flex justify-between items-start max-w-full w-full sm:pr-[55px]">
                             <Image
                                 loading="lazy"
                                 src="/images/calendario-cinza-redondo.svg"
