@@ -15,12 +15,13 @@ interface ButtonWithIconProps {
     className?: string;
     onClick?: () => void;
     linkTo?: string;
+    linkTarget?: string;
 }
 
-const ButtonWithIcon: React.FC<ButtonWithIconProps> = ({ text, className = "", onClick, linkTo }) => (
+const ButtonWithIcon: React.FC<ButtonWithIconProps> = ({ text, className = "", onClick, linkTo, linkTarget }) => (
 
     linkTo ? (
-        <Link href={linkTo}>
+        <Link href={linkTo} target={linkTarget || "_self"}>
             <button className={`flex gap-2.5 justify-center items-center px-5 py-2.5 ${className}`} onClick={onClick}>
                 <p className="self-stretch my-auto">{text}</p>
                 <Image
@@ -181,7 +182,8 @@ function ServicesSection() {
                         <ButtonWithIcon
                             text="Falar com Especialista"
                             className="mt-8 bg-amber-400 text-neutral-900"
-                            linkTo="#especialistas"
+                            linkTo="https://wa.me/5511941936176?text=Olá,%20vim%20do%20site%20de%20vocês%20e%20gostaria%20de%20falar%20com%20um%20especialista."
+                            linkTarget="_blank"
                         />
                     </div>
                 </div>
