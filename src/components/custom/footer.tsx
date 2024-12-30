@@ -71,7 +71,7 @@ function Footer() {
                                 />
                                 <button
                                     type="submit"
-                                    className="gap-2.5 self-stretch px-5 py-4 font-bold bg-white rounded-md text-neutral-900 hover:bg-gray-100 transition-colors"
+                                    className="gap-2.5 self-stretch px-5 py-4 font-bold bg-white rounded-md text-[#161617] hover:bg-gray-100 transition-colors"
                                 >
                                     Iniciar Jornada
                                 </button>
@@ -129,18 +129,18 @@ function Footer() {
                         </div>
                         <div className="flex flex-col max-md:max-w-full">
                             <div className="flex flex-col self-start whitespace-nowrap">
-                                <div className="text-xs tracking-wide uppercase">
+                                <p className="text-xs tracking-wide uppercase">
                                     {contactInfo[2].title}
-                                </div>
-                                <div className="mt-2 text-sm">{contactInfo[2].value}</div>
+                                </p>
+                                <p className="mt-2 text-sm">{contactInfo[2].value}<br />{contactInfo[3].value}</p>
                             </div>
-                            <div className="self-end mt-20 text-xs text-right max-md:mt-10">
+                            <p className="self-end mt-20 text-xs text-right max-md:mt-10">
                                 © {new Date().getFullYear()} — Todos os Direitos Reservados para Draggax
-                            </div>
+                            </p>
                         </div>
                     </div>
                     <div className="flex flex-wrap gap-5 justify-between mt-20 w-full text-xl tracking-normal leading-7 text-white max-md:mt-10 max-md:max-w-full">
-                        <div>Explore nossas soluções.</div>
+                        <h4>Explore nossas soluções.</h4>
                         <Link
                             href={"#inicio"}
                         >
