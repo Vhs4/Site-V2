@@ -6,7 +6,7 @@ const AboutSection = () => {
     return (
         <div className="flex flex-col items-center justify-between w-full max-w-full mt-[150px] mb-[92px]">
             <div className="z-10 w-full max-md:max-w-full px-12 flex items-center md:justify-start md:items-start justify-center md:px-[100px] lg:px-[300px] mb-[114px]">
-                <div className="w-full flex justify-between items-center gap-5">
+                <div className="w-full flex justify-center flex-col lg:flex-wrap lg:justify-between items-center flex-wrap gap-5">
                     <h2 className="text-[#161617] text-2xl md:text-3xl 2xl:text-6xl font-medium">
                         Soluções tecnológicas feita para<br /> crescer com seu negócio.
                     </h2>

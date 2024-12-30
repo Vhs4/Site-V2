@@ -1,4 +1,5 @@
 import AboutSection from "@/components/custom/about-section";
+import Experts from "@/components/custom/experts";
 import Footer from "@/components/custom/footer";
 import Inovacao from "@/components/custom/inovacao";
 import ServicesSection from "@/components/custom/services-section";
@@ -12,6 +13,9 @@ export default function Home() {
       </div>
       <div className="max-w-full flex justify-center">
         <AboutSection />
+      </div>
+      <div className="max-w-full flex justify-center">
+        <Experts />
       </div>
       <Footer />
     </>
