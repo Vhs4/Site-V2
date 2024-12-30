@@ -142,7 +142,7 @@ function Footer() {
                     <div className="flex flex-wrap gap-5 justify-between mt-20 w-full text-xl tracking-normal leading-7 text-white max-md:mt-10 max-md:max-w-full">
                         <h4>Explore nossas soluções.</h4>
                         <Link
-                            href={"#inicio"}
+                            href={"https://wa.me/5511941936176?text=Olá,%20vim%20do%20site%20de%20vocês%20e%20gostaria%20de%20obter%20mais%20informações%20dos%20seus%20serviços."}
                         >
                             <Image
                                 loading="lazy"
