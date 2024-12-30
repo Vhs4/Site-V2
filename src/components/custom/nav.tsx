@@ -41,7 +41,7 @@ const Nav = () => {
                             </li>
                         ))}
                         <Button className="rounded-[24px] px-[31px] py-[9px] text-[14px] font-normal text-[#D2D2D2] hover:opacity-80">
-                            <Link href={"#especialistas"}>Falar com especialista</Link>
+                            <Link href={"https://wa.me/5511941936176?text=Olá,%20vim%20do%20site%20de%20vocês%20e%20gostaria%20de%20falar%20com%20um%20especialista."} target="_blank">Falar com especialista</Link>
                             <Image
                                 src="/images/agenda.svg"
                                 alt="arrow down"
@@ -66,7 +66,7 @@ const Nav = () => {
                             </li>
                         ))}
                         <Button className="rounded-[24px] px-[31px] py-[9px] text-[14px] font-normal text-[#D2D2D2] hover:opacity-80">
-                            <Link href={"#especialistas"}>Falar com especialista</Link>
+                            <Link href={"https://wa.me/5511941936176?text=Olá,%20vim%20do%20site%20de%20vocês%20e%20gostaria%20de%20falar%20com%20um%20especialista."} target="_blank">Falar com especialista</Link>
                             <Image
                                 src="/images/agenda.svg"
                                 alt="arrow down"

@@ -55,7 +55,7 @@ function ServicesSection() {
     return (
         <div className="flex flex-col items-center justify-center px-[100px] mt-[64px] max-w-full" id="solucoes">
             <div className="z-10 w-full max-md:max-w-full">
-                <div className="flex gap-5 md:gap-10 max-md:flex-col justify-center">
+                <div className="flex gap-5 md:gap-10 max-md:flex-col">
                     <div className="flex flex-col max-md:w-full items-center md:items-center">
                         <h3 className="text-5xl font-medium text-neutral-900 max-md:mt-10 max-md:max-w-full max-md:text-4xl">
                             Expanda seu alcance<br /> e conquiste novos<br /> mercados
