@@ -112,7 +112,7 @@ function Footer() {
                         ))}
                     </nav>
                     <div className="flex flex-wrap gap-5 justify-between mt-20 font-medium leading-snug text-white max-md:mt-10 max-md:mr-1.5 max-md:max-w-full">
-                        <div className="flex flex-col items-start">
+                        <div className="flex flex-col items-start" id="contato">
                             {contactInfo.slice(0, 2).map((info, index) => (
                                 <div key={index} className="flex flex-col mb-12">
                                     <div className="text-xs tracking-wide uppercase">
@@ -140,7 +140,7 @@ function Footer() {
                         </div>
                     </div>
                     <div className="flex flex-wrap gap-5 justify-between mt-20 w-full text-xl tracking-normal leading-7 text-white max-md:mt-10 max-md:max-w-full">
-                        <h4>Explore nossas soluções.</h4>
+                        <h4>Você manda, a gente desenvolve :&#41;</h4>
                         <Link
                             href={"#inicio"}
                         >
