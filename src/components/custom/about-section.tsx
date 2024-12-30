@@ -22,12 +22,13 @@ const AboutSection = () => {
                     </Link>
                 </div>
             </div>
-            <div className="z-10 w-full max-md:max-w-full px-12 flex items-center md:justify-start md:items-start justify-center md:px-[100px] lg:px-[300px]">
+            <div className="z-10 w-full max-md:max-w-full px-12 flex items-center md:justify-start md:items-start justify-center md:px-[100px] lg:px-[300px] mb-[114px]">
                 <div className="flex gap-[50px] md:gap-[110px] flex-wrap justify-center">
                     <Image src={"/images/about-image.svg"}
                         width={310}
                         height={310}
                         alt="Ilustração de um homem com um notebook"
+                        priority
                     />
                     <div className="flex flex-col gap-[49px]">
                         <div className="flex flex-col gap-[27px]">
@@ -47,6 +48,67 @@ const AboutSection = () => {
                                 alt="Seta para esquerda"
                             />
                         </Link>
+                    </div>
+                </div>
+            </div>
+            <div className="z-10 w-full max-md:max-w-full px-12 flex items-center md:justify-start md:items-start justify-center md:px-[100px] lg:px-[300px] flex-wrap">
+                <div className="w-full flex justify-center w-[1300px]:justify-between flex-wrap gap-10">
+                    <div className="flex">
+                        <div className="flex flex-col mr-[61px]">
+                            <h5 className="text-3xl font-medium text-[#161617]">1M<span className="text-[#ffc629]">+</span></h5>
+                            <p className="text-[#161617]">de receita gerada</p>
+                        </div>
+                        <Image
+                            src={"/images/palito-cinza-em-pe.svg"}
+                            width={1}
+                            height={29}
+                            alt="Palito cinza em pé"
+                        />
+                        <div className="flex flex-col ml-[61px]">
+                            <h5 className="text-3xl font-medium text-[#161617]">100<span className="text-[#ffc629]">+</span></h5>
+                            <p className="text-[#161617]">de Clientes Satisfeitos</p>
+                        </div>
+                    </div>
+                    <div className="flex gap-5 max-h-full flex-wrap justify-center">
+                        <div className="flex flex-col gap-[18px]">
+                            <div className="w-[200px] h-[200px] bg-[#FFC629] max-w-full"></div>
+                            <Link href="https://wa.me/5511941936176?text=Olá,%20vim%20do%20site%20de%20vocês%20e%20gostaria%20de%20saber%20mais%20do%20serviço%20de%20desenvolvimento%20de%20sistemas." className="w-fit flex gap-4" target="_blank">
+                                <button className="flex items-center rounded-[40px] w-fit bg-white text-[#161617] text-[16px] border border-solid border-[#161617] py-[10px] px-[20px] gap-[10px] justify-center">
+                                    Desenvolvimento
+                                    <Image src={"/images/seta-preta-vertical.svg"}
+                                        width={11}
+                                        height={11}
+                                        alt="Seta para baixo"
+                                    />
+                                </button>
+                            </Link>
+                        </div>
+                        <div className="flex flex-col gap-[18px]">
+                            <div className="w-[200px] h-[200px] bg-[#FFC629] max-w-full"></div>
+                            <Link href="https://wa.me/5511941936176?text=Olá,%20vim%20do%20site%20de%20vocês%20e%20gostaria%20de%20saber%20mais%20do%20serviço%20de%20marketing" className="w-fit flex gap-4" target="_blank">
+                                <button className="flex items-center rounded-[40px] w-fit bg-white text-[#161617] text-[16px] border border-solid border-[#161617] py-[10px] px-[20px] gap-[10px] justify-center">
+                                    Marketing
+                                    <Image src={"/images/seta-preta-vertical.svg"}
+                                        width={11}
+                                        height={11}
+                                        alt="Seta para baixo"
+                                    />
+                                </button>
+                            </Link>
+                        </div>
+                        <div className="flex flex-col gap-[18px]">
+                            <div className="w-[200px] h-[200px] bg-[#FFC629] max-w-full"></div>
+                            <Link href="https://wa.me/5511941936176?text=Olá,%20vim%20do%20site%20de%20vocês%20e%20gostaria%20de%20saber%20mais%20do%20serviço%20de%20transformação%20digitail" className="w-fit flex gap-4" target="_blank">
+                                <button className="flex items-center rounded-[40px] w-fit bg-white text-[#161617] text-[16px] border border-solid border-[#161617] py-[10px] px-[20px] gap-[10px] justify-center">
+                                    Transformação digital
+                                    <Image src={"/images/seta-preta-vertical.svg"}
+                                        width={11}
+                                        height={11}
+                                        alt="Seta para baixo"
+                                    />
+                                </button>
+                            </Link>
+                        </div>
                     </div>
                 </div>
             </div>
