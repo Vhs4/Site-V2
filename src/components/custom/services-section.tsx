@@ -105,7 +105,8 @@ function ServicesSection() {
                             <ButtonWithIcon
                                 text="Explore nossas Soluções"
                                 className="relative px-5 py-2.5 -mb-7 bg-amber-400 rounded-[30px] max-md:mb-2.5"
-                                linkTo="#solucoes"
+                                linkTo="https://wa.me/5511941936176?text=Olá,%20vim%20do%20site%20de%20vocês%20e%20gostaria%20de%20obter%20mais%20informações%20dos%20seus%20serviços."
+                                linkTarget="_blank"
                             />
                         </div>
                     </div>
@@ -152,7 +153,7 @@ function ServicesSection() {
                     </div>
                 </div>
                 <div className="flex flex-col self-stretch  min-w-[240px] w-[420px]">
-                    <div className="flex flex-col items-start pl-11 pt-9 pb-14 w-full bg-white max-md:px-5">
+                    <div className="flex flex-col items-start pl-11 pt-9 pb-14 w-full bg-white max-md:px-5 md:max-h-[550px]">
                         <div className="flex justify-between items-start max-w-full w-full sm:pr-[55px]">
                             <Image
                                 loading="lazy"
@@ -177,11 +178,11 @@ function ServicesSection() {
                             ))}
                         </div>
                         <h4 className="self-stretch mt-8 text-4xl font-medium text-neutral-900">
-                            Sistema Gerenciador com Análises Avançadas
+                            Sistema<br /> Gerenciador com<br /> Análises Avançadas
                         </h4>
                         <ButtonWithIcon
                             text="Falar com Especialista"
-                            className="mt-8 bg-amber-400 text-neutral-900"
+                            className="mt-8 bg-amber-400 text-neutral-900 rounded-full"
                             linkTo="https://wa.me/5511941936176?text=Olá,%20vim%20do%20site%20de%20vocês%20e%20gostaria%20de%20falar%20com%20um%20especialista."
                             linkTarget="_blank"
                         />
