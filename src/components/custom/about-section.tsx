@@ -23,19 +23,30 @@ const AboutSection = () => {
                 </div>
             </div>
             <div className="z-10 w-full max-md:max-w-full px-12 flex items-center md:justify-start md:items-start justify-center md:px-[100px] lg:px-[300px]">
-                <div className="flex gap-[110px] flex-wrap justify-center">
+                <div className="flex gap-[50px] md:gap-[110px] flex-wrap justify-center">
                     <Image src={"/images/about-image.svg"}
                         width={310}
                         height={310}
                         alt="Ilustração de um homem com um notebook"
                     />
-                    <div className="flex flex-col gap-[27px]">
-                        <h3 className="text-[#161617] text-3xl lg:text-[48px] font-medium">
-                            Sua solução,<br /> nossa inovação.
-                        </h3>
-                        <p>
-                            Transforme a visão do seu projeto em resultados<br /> concretos, ampliando-o com soluções personalizadas,<br /> inovação, criatividade e tecnologia para conectar seu<br /> produto ao usuário certo, na hora certa.
-                        </p>
+                    <div className="flex flex-col gap-[49px]">
+                        <div className="flex flex-col gap-[27px]">
+                            <h3 className="text-[#161617] text-3xl lg:text-5xl font-medium">
+                                Sua solução,<br /> nossa inovação.
+                            </h3>
+                            <p>
+                                Transforme a visão do seu projeto em resultados<br /> concretos, ampliando-o com soluções personalizadas,<br /> inovação, criatividade e tecnologia para conectar seu<br /> produto ao usuário certo, na hora certa.
+                            </p>
+                        </div>
+                        <Link href="https://wa.me/5511941936176?text=Olá,%20vim%20do%20site%20de%20vocês%20e%20gostaria%20de%20falar%20com%20um%20especialista." className="w-fit flex gap-4" target="_blank">
+                            <p className="text-xl text-[#161617] font-semibold">Fale com nossos especialistas</p>
+                            <Image
+                                src="/images/seta-preta-esquerda-circular.svg"
+                                width={14}
+                                height={14}
+                                alt="Seta para esquerda"
+                            />
+                        </Link>
                     </div>
                 </div>
             </div>
