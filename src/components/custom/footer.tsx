@@ -134,7 +134,7 @@ function Footer() {
                                 </p>
                                 <p className="mt-2 text-sm">{contactInfo[2].value}<br />{contactInfo[3].value}</p>
                             </div>
-                            <p className="self-end mt-20 text-xs text-right max-md:mt-10">
+                            <p className="self-end mt-20 text-xs text-right max-md:mt-10 text-white opacity-50 font-medium">
                                 © {new Date().getFullYear()} — Todos os Direitos Reservados para Draggax
                             </p>
                         </div>
