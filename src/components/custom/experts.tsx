@@ -15,7 +15,7 @@ const Experts = () => {
             name: "Karina Cardoso",
             image: "/images/kai.jpeg",
             descriptionHtml: "Especialista em UI/UX, Design e Produtos<br/> Certificada por: Google & California Institute of Art",
-            linkedin: "https://www.linkedin.com/in/vhs4"
+            linkedin: "https://www.linkedin.com/in/kaicardoso/"
         },
         {
             name: "Giovana Lopes",
