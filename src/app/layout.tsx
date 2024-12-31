@@ -42,6 +42,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-BR">
+      <head>
+        <link
+          rel="icon"
+          href="/icon/ico.png"
+          type="image/<generated>"
+          sizes="<generated>"
+        />
+      </head>
       <body className={`${robotoFlex.variable} antialiased`}>{children}</body>
     </html>
   );
