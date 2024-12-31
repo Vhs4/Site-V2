@@ -53,7 +53,7 @@ function ServicesSection() {
     const circles = Array(24).fill(null);
 
     return (
-        <section className="flex flex-col items-center justify-center px-[100px] mt-[64px] max-w-full" id="servicos">
+        <section className="flex flex-col items-center justify-center px-5 sm:px-[100px] mt-[64px] max-w-full" id="servicos">
             <div className="z-10 w-full max-md:max-w-full">
                 <div className="flex gap-5 md:gap-10 max-md:flex-col">
                     <div className="flex flex-col max-md:w-full items-center md:items-center">
@@ -61,7 +61,7 @@ function ServicesSection() {
                             Expanda seu alcance<br /> e conquiste novos<br /> mercados
                         </h3>
                     </div>
-                    <div className="flex flex-col max-md:w-full items-center md:items-start">
+                    <div className="flex flex-col max-md:w-full px-5 sm:px-0 items-center md:items-start">
                         <h4 className="text-xl text-neutral-900 max-md:mt-10">
                             Nós moldamos e fortalecemos a identidade<br /> digital da sua marca,
                             garantindo que ela se<br /> destaque e ressoe com o público.
@@ -83,7 +83,7 @@ function ServicesSection() {
                 </div>
             </div>
             <div className="flex flex-wrap gap-5 items-center mt-24 max-md:mt-10 justify-center max-w-full">
-                <div className="flex flex-col self-stretch  rounded-none min-w-[240px] text-neutral-900 w-[420px]">
+                <div className="flex flex-col self-stretch rounded-none  text-neutral-900 w-[420px]">
                     <div className="flex flex-col items-center px-11 py-12 bg-white max-md:px-5">
                         <h4 className="text-4xl font-medium text-center w-[308px]">
                             Branding Full Service
@@ -111,7 +111,7 @@ function ServicesSection() {
                         </div>
                     </div>
                 </div>
-                <div className="flex flex-col self-stretch  rounded-none min-w-[240px] w-[420px]">
+                <div className="flex flex-col self-stretch  rounded-none  w-[420px]">
                     <div className="px-11 pt-7 pb-16 w-full bg-neutral-900 max-md:px-5">
                         <div className="flex gap-5 max-md:flex-col">
                             <div className="flex flex-col w-[24%] max-md:ml-0 max-md:w-full">
@@ -152,7 +152,7 @@ function ServicesSection() {
                         </h5>
                     </div>
                 </div>
-                <div className="flex flex-col self-stretch  min-w-[240px] w-[420px]">
+                <div className="flex flex-col self-stretch   w-[420px]">
                     <div className="flex flex-col items-start pl-11 pt-9 pb-14 w-full bg-white max-md:px-5 md:max-h-[550px]">
                         <div className="flex justify-between items-start max-w-full w-full sm:pr-[55px]">
                             <Image

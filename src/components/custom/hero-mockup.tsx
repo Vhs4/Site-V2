@@ -15,7 +15,6 @@ const HeroMockup = () => {
                     />
                 </div>
                 <Image
-                    loading="lazy"
                     src="/images/celular-hero-mockup.svg"
                     alt="Mockup celular"
                     className="block lg:hidden object-contain absolute inset-0 size-full"
@@ -23,7 +22,6 @@ const HeroMockup = () => {
                     priority
                 />
                 <Image
-                    loading="lazy"
                     src="/images/computador-hero-mockup.svg"
                     alt="Mockup computador"
                     className="object-contain lg:block hidden"
