@@ -26,7 +26,7 @@ const Experts = () => {
     ];
 
     return (
-        <div className="flex flex-col items-center justify-between w-full max-w-full mb-[167px] bg-[#161617]" id="especialistas">
+        <section className="flex flex-col items-center justify-between w-full max-w-full mb-[167px] bg-[#161617]" id="especialistas">
             <div className="z-10 w-full max-md:max-w-full px-12 flex flex-col items-center md:justify-start md:items-start justify-center md:px-[100px] lg:px-[300px] mb-[114px]">
                 <div className="w-full mt-[100px] flex md:justify-between max-w-full gap-5 sm:gap-0 flex-wrap justify-center mb-[107px]">
                     <h3 className="text-4xl sm:text-5xl lg:text-[64px] lg:leading-normal text-white">Nossos<br /> especialistas</h3>
@@ -61,9 +61,7 @@ const Experts = () => {
 
                                         <p className="text-xl text-white">{expert.name}</p>
                                         <div className="flex gap-2 sm:gap-0 flex-wrap">
-                                            <p className="text-[#FFC649] text-sm mr-[23px] text-wrap">
-                                                <div dangerouslySetInnerHTML={{ __html: expert.descriptionHtml }} />
-                                            </p>
+                                            <div className="text-[#FFC649] text-sm mr-[23px] text-wrap" dangerouslySetInnerHTML={{ __html: expert.descriptionHtml }} />
                                             <Link href={expert.linkedin} target="_blank">
                                                 <Image
                                                     src={"/images/seta-amarela-vertical.svg"}
@@ -80,7 +78,7 @@ const Experts = () => {
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
     );
 };
 

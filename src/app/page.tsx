@@ -3,6 +3,7 @@ import Experts from "@/components/custom/experts";
 import Footer from "@/components/custom/footer";
 import Inovacao from "@/components/custom/inovacao";
 import ServicesSection from "@/components/custom/services-section";
+import SolutionsSection from "@/components/custom/solutions-section";
 
 export default function Home() {
   return (
@@ -16,6 +17,9 @@ export default function Home() {
       </div>
       <div className="max-w-full flex justify-center">
         <Experts />
+      </div>
+      <div className="max-w-full flex justify-center">
+        <SolutionsSection />
       </div>
       <Footer />
     </>
