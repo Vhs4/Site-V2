@@ -11,6 +11,7 @@ const HeroMockup = () => {
                         fill
                         alt="Polígonos"
                         className="object-cover"
+                        priority
                     />
                 </div>
                 <Image
@@ -19,6 +20,7 @@ const HeroMockup = () => {
                     alt="Mockup celular"
                     className="block lg:hidden object-contain absolute inset-0 size-full"
                     fill
+                    priority
                 />
                 <Image
                     loading="lazy"
@@ -26,6 +28,7 @@ const HeroMockup = () => {
                     alt="Mockup computador"
                     className="object-contain lg:block hidden"
                     fill
+                    priority
                 />
             </div>
         </div>
