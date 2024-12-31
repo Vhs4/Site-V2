@@ -11,9 +11,10 @@ const Nav = () => {
 
     const navButtons = [
         { href: "#inicio", label: "Início" },
+        { href: "#servicos", label: "Nossos Serviços" },
         { href: "#solucoes", label: "Nossas Soluções" },
         { href: "#contato", label: "Contato" },
-        { href: "#", label: "Trabalhe conosco" },
+        // { href: "#", label: "Trabalhe conosco" },
     ];
 
     const toggleMenu = () => {

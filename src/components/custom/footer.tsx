@@ -31,14 +31,34 @@ const contactInfo: ContactInfo[] = [
 
 function Footer() {
     const [email, setEmail] = useState("");
+    const [sending, setSending] = useState(false);
+    const [submitted, setSubmitted] = useState(false);
 
-    const handleSubmit = (e: React.FormEvent) => {
+    const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
-        if (email) {
-            console.log("Email submitted:", email);
+        setSending(true);
+
+        try {
+            const formData = new FormData(e.currentTarget);
+            await fetch("https://formsubmit.co/81f6904e5ad0e354738fec1f3f1e3872", {
+                method: "POST",
+                body: formData
+            });
+
+            setSubmitted(true);
             setEmail("");
+
+            // Reset o estado após 3 segundos
+            setTimeout(() => {
+                setSubmitted(false);
+            }, 3000);
+        } catch (error) {
+            console.error("Erro:", error);
+        } finally {
+            setSending(false);
         }
     };
+
 
     return (
         <footer className="flex flex-col rounded-none">
@@ -58,22 +78,26 @@ function Footer() {
                         </div>
                         <div className="w-full flex justify-end">
                             <form onSubmit={handleSubmit} className="flex gap-2 sm:gap-5 self-end mt-20 text-sm max-md:mt-10">
-                                <label htmlFor="emailInput" className="sr-only">Digite seu melhor e-mail</label>
+                                <input type="hidden" name="_subject" value="Nova inscrição!" />
+                                <input type="hidden" name="_captcha" value="false" />
+                                <label htmlFor="email" className="sr-only">Digite seu melhor e-mail</label>
                                 <input
                                     type="email"
-                                    id="emailInput"
+                                    name="email"
                                     value={email}
                                     onChange={(e) => setEmail(e.target.value)}
+                                    required
                                     className="flex-auto gap-2.5 self-stretch px-5 py-4 text-white rounded-lg border border-white border-solid min-h-[46px] bg-transparent"
                                     placeholder="Digite seu melhor e-mail"
                                     aria-label="Digite seu melhor e-mail"
-                                    required
                                 />
                                 <button
                                     type="submit"
                                     className="gap-2.5 self-stretch px-5 py-4 font-bold bg-white rounded-md text-[#161617] hover:bg-gray-100 transition-colors"
+                                    disabled={sending}
                                 >
-                                    Iniciar Jornada
+                                    {sending ? "Enviando..." : submitted ? "Enviado com sucesso!" : "Iniciar jornada"}
+
                                 </button>
                             </form>
                         </div>
