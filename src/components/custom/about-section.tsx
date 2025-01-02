@@ -46,6 +46,7 @@ const AboutSection = () => {
                                 width={14}
                                 height={14}
                                 alt="Seta para esquerda"
+                                className="mt-[4.5px]"
                             />
                         </Link>
                     </div>

@@ -2,11 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  font-family: "Roboto Flex", Arial, Helvetica, sans-serif;
-  background-color: #f8f8f9;
-}
-
 @layer base {
   :root {
     --radius: 0.5rem;
@@ -33,5 +28,7 @@ body {
 
   html {
     @apply scroll-smooth;
+    font-family: "Roboto Flex", Arial, Helvetica, sans-serif;
+    background-color: #f8f8f9;
   }
 }

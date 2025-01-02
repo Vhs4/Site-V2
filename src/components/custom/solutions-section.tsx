@@ -11,6 +11,7 @@ import Image from "next/image";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { Card, CardContent } from "../ui/card";
 import { Button } from "../ui/button";
+import Link from "next/link";
 
 const solutions = [
     {
@@ -125,6 +126,48 @@ const SolutionsSection = () => {
                                 ))}
                             </CarouselContent>
                         </Carousel>
+                    </div>
+                </div>
+                <div className="flex mt-20 md:mt-[136px] text-[#161617] justify-between flex-wrap">
+                    <h3 className="md:text-[64px] md:leading-[75px] text-5xl mr-2">Conecte-se e expanda seu<br /> mercado.</h3>
+                    <div className="flex flex-col mt-[10px] w-[1115px]:mt-0">
+                        <button className="w-[81px] h-[29px] text-center text-base border border-solid rounded-full border-[#161617] mr-[217px]">Growth</button>
+                        <p className="mt-[17px] text-base">
+                            Construímos relacionamentos duradouros<br /> com seu público, transformando primeiras<br /> impressões em seguidores fiéis.
+                        </p>
+                    </div>
+                </div>
+                <div className="flex mt-10 md:mt-20 text-[#161617] justify-between flex-wrap">
+                    <div className="flex flex-col">
+                        <p className="text-xl">Maximizamos o impacto de cada clique, garantindo que<br /> cada um traga valor, engajamento e crescimento para o<br /> seu negócio.</p>
+                        <Link href="https://wa.me/5511941936176?text=Olá,%20vim%20do%20site%20de%20vocês%20e%20gostaria%20de%20falar%20com%20um%20especialista." className="w-fit flex gap-4 mt-12" target="_blank">
+                            <p className="text-xl text-[#161617] font-semibold">Fale com nossos especialistas</p>
+                            <Image
+                                src="/images/seta-preta-esquerda-circular.svg"
+                                width={14}
+                                height={14}
+                                alt="Seta para esquerda"
+                                className="mt-[4.5px]"
+                            />
+                        </Link>
+                    </div>
+                    <div className="flex justify-between pt-[25px] px-[30px] bg-white w-[420px] max-w-full h-[144px] flex-wrap">
+                        <div className="flex flex-col">
+                            <p className="text-[12px] leading-[14.06px]">Sucesso do seu negócio:</p>
+                            <h4 className="text-4xl mb-[14px] mt-[1px]">89.5%</h4>
+                            <p className="text-[12px] leading-[14.06px]">+0.5 da semana passada</p>
+                        </div>
+                        <ul className="flex flex-col gap-[5px]">
+                            <li className="rounded-full text-sm w-fit border border-solid border-[#161617] py-[5px] px-[15px] flex items-center justify-center">
+                                Inovação
+                            </li>
+                            <li className="rounded-full text-sm w-fit border border-solid border-[#161617] py-[5px] px-[15px] flex items-center justify-center">
+                                Planejamento
+                            </li>
+                            <li className="rounded-full text-sm w-fit border border-solid border-[#161617] py-[5px] px-[15px] flex items-center justify-center">
+                                Vendas
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>

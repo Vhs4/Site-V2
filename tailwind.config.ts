@@ -57,7 +57,7 @@ export default {
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
-        "brand-slogan": "brand-slogan 5s linear infinite"
+        "brand-slogan": "brand-slogan 4s linear infinite"
       },
       backgroundImage: {
         "brand-slogan": "linear-gradient(90deg, #161617 0%, #E2E2E2 50%, #161617 100%)",
