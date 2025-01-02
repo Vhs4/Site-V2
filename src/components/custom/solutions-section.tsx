@@ -74,7 +74,7 @@ const SolutionsSection = () => {
                                 >
                                     <Image
                                         src={solutions[index].image}
-                                        alt=""
+                                        alt="Imagem da solução"
                                         fill
                                         className="object-cover"
                                         priority
