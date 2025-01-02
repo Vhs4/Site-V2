@@ -44,7 +44,7 @@ const SolutionsSection = () => {
     }, [api]);
 
     return (
-        <section className="w-full py-12" id="solucoes">
+        <section className="w-full pt-12 pb-[124px]" id="solucoes">
             <div className="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
                 <div className="grid grid-cols-1 md:grid-cols-[300px,1fr] gap-8 items-start">
                     <div className="space-y-6">
@@ -137,10 +137,10 @@ const SolutionsSection = () => {
                         </p>
                     </div>
                 </div>
-                <div className="flex mt-10 md:mt-20 text-[#161617] justify-between flex-wrap">
+                <div className="flex mt-10 w-[865px]:mt-20 text-[#161617] justify-between flex-wrap">
                     <div className="flex flex-col">
-                        <p className="text-xl">Maximizamos o impacto de cada clique, garantindo que<br /> cada um traga valor, engajamento e crescimento para o<br /> seu negócio.</p>
-                        <Link href="https://wa.me/5511941936176?text=Olá,%20vim%20do%20site%20de%20vocês%20e%20gostaria%20de%20falar%20com%20um%20especialista." className="w-fit flex gap-4 mt-12" target="_blank">
+                        <p className="text-x mr-2">Maximizamos o impacto de cada clique, garantindo que<br /> cada um traga valor, engajamento e crescimento para o<br /> seu negócio.</p>
+                        <Link href="https://wa.me/5511941936176?text=Olá,%20vim%20do%20site%20de%20vocês%20e%20gostaria%20de%20falar%20com%20um%20especialista." className="w-fit flex gap-4 mt-12 mb-4 w-[865px]:mb-0" target="_blank">
                             <p className="text-xl text-[#161617] font-semibold">Fale com nossos especialistas</p>
                             <Image
                                 src="/images/seta-preta-esquerda-circular.svg"
@@ -168,6 +168,45 @@ const SolutionsSection = () => {
                                 Vendas
                             </li>
                         </ul>
+                    </div>
+                    <Image
+                        src="/images/grafico-landing-page.svg"
+                        alt="Gráfico de crescimento"
+                        width={1272}
+                        height={270}
+                        className="mt-20 w-full max-w-full"
+                    />
+                    <div className="w-full flex justify-between mt-[25px] gap-5 flex-wrap">
+                        <Link href="https://wa.me/5511941936176?text=Olá,%20vim%20do%20site%20de%20vocês%20e%20gostaria%20de%20falar%20com%20um%20especialista." className="w-fit flex gap-4 w-[865px]:mb-0" target="_blank">
+                            <p className="text-xl text-[#161617] font-normal">Feito para seu sucesso</p>
+                            <Image
+                                src="/images/seta-preta-esquerda-circular.svg"
+                                width={14}
+                                height={14}
+                                alt="Seta para esquerda"
+                                className="mt-[4.5px]"
+                            />
+                        </Link>
+                        <Link href="https://wa.me/5511941936176?text=Olá,%20vim%20do%20site%20de%20vocês%20e%20gostaria%20de%20falar%20com%20um%20especialista." className="w-fit flex gap-4 w-[865px]:mb-0" target="_blank">
+                            <p className="text-xl text-[#161617] font-normal">Transformando visão em visibilidade</p>
+                            <Image
+                                src="/images/seta-preta-esquerda-circular.svg"
+                                width={14}
+                                height={14}
+                                alt="Seta para esquerda"
+                                className="mt-[4.5px]"
+                            />
+                        </Link>
+                        <Link href="https://wa.me/5511941936176?text=Olá,%20vim%20do%20site%20de%20vocês%20e%20gostaria%20de%20falar%20com%20um%20especialista." className="w-fit flex gap-4 w-[865px]:mb-0" target="_blank">
+                            <p className="text-xl text-[#161617] font-normal">Fazendo cada clique valer a pena</p>
+                            <Image
+                                src="/images/seta-preta-esquerda-circular.svg"
+                                width={14}
+                                height={14}
+                                alt="Seta para esquerda"
+                                className="mt-[4.5px]"
+                            />
+                        </Link>
                     </div>
                 </div>
             </div>
